@@ -6,28 +6,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@angular/core");
-const common_1 = require("@angular/common");
-const forms_1 = require("@angular/forms");
-const ngfuse_service_1 = require("./src/ngfuse.service");
-const ngfuse_pipe_1 = require("./src/ngfuse.pipe");
-let NgFuseModule = class NgFuseModule {
-};
-NgFuseModule = __decorate([
-    core_1.NgModule({
-        declarations: [
-            ngfuse_pipe_1.NgFusePipe
-        ],
-        imports: [
-            common_1.CommonModule,
-            forms_1.FormsModule
-        ],
-        exports: [
-            ngfuse_pipe_1.NgFusePipe
-        ],
-        providers: [ngfuse_service_1.NgFuseService],
-    })
-], NgFuseModule);
+var core_1 = require("@angular/core");
+var common_1 = require("@angular/common");
+var forms_1 = require("@angular/forms");
+var ngfuse_service_1 = require("./src/ngfuse.service");
+var ngfuse_pipe_1 = require("./src/ngfuse.pipe");
+var NgFuseModule = /** @class */ (function () {
+    function NgFuseModule() {
+    }
+    NgFuseModule = __decorate([
+        core_1.NgModule({
+            declarations: [
+                ngfuse_pipe_1.NgFusePipe
+            ],
+            imports: [
+                common_1.CommonModule,
+                forms_1.FormsModule
+            ],
+            exports: [
+                ngfuse_pipe_1.NgFusePipe
+            ],
+            providers: [ngfuse_service_1.NgFuseService],
+        })
+    ], NgFuseModule);
+    return NgFuseModule;
+}());
 exports.NgFuseModule = NgFuseModule;
 var ngfuse_service_2 = require("./src/ngfuse.service");
 exports.NgFuseService = ngfuse_service_2.NgFuseService;
